@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Prueba Extensión",
+  "version": "1.0",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "script.js"
+      ],
+      "matches": [
+        "https://example.com/*",
+        "https://example.com/*"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html"
+  }
+}
